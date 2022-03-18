@@ -1,3 +1,5 @@
+import Movie from './components/Movie'
+import Movies from './components/Movies'
 import MyComponent from './components/MyComponent'
 
 function App() {
@@ -5,9 +7,8 @@ function App() {
 
   return (
     <main className="mx-auto max-w-sm mt-6 border-2 p-6">
-      <p className="text-3xl font-bold underline">Add JSX</p>
-      <p>Add components</p>
-      <MyComponent />
+      <Movie />
+      <Movies />
     </main>
   )
 }
