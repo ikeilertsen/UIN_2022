@@ -1,6 +1,6 @@
 export default {
   type: 'document',
-  name:'movie',
+  name: 'movieschema',
   title: 'Movies',
   fields: [
     {
@@ -9,9 +9,10 @@ export default {
       title: 'Title',
     },
     {
-      type: 'refrence',
+      type: 'reference',
       name: 'actor',
       title: 'Actor',
+      to: [{ type: 'actors' }],
     },
   ],
 }

@@ -1,23 +1,23 @@
-const actor {
+export default {
   type: 'document',
   name: 'actors',
   title: 'Actors',
   fields: [
     {
       type: 'string',
-      name: 'full name',
+      name: 'full_name',
       title: 'Full Name',
     },
     {
       type: 'slug',
       name: 'name',
-      title: 'En slug',
+      title: 'Generate Slug',
       options: {
         source: 'title',
         slugify: (input) =>
           input.toLowerCase().replace(/\s+/g, '-').slice(0, 200),
-        },
-        validation: (rule) => rule.required(),
+      },
+      validation: (rule) => rule.required(),
     },
   ],
   preview: {
@@ -26,5 +26,3 @@ const actor {
     },
   },
 }
-
-export default actor;

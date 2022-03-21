@@ -1,30 +1,8 @@
-export default function Movie({ movieList }){
-  const movieList[
-    {
-      id: 1,
-      title: "Spiderman far from  home",
-      actor: "Tom Holland"
-    },
-    {
-      id: 2,
-      title: "Iron Man",
-      actor: "Robert Downey Jr"
-    },
-    {
-      id: 3,
-      title: "Thor",
-      actor: "Chris Hemsworth"
-    },
-    {
-      id: 4,
-      title: "Doctor Strange",
-      actor: "Benedict Cumberbatch"
-    },
-    {
-      id: 5,
-      title: "Captain America",
-      actor: "Chris Evans"
-    },
-  ];
-  return <><ul>{movieList?.map}</ul></>
+export default function Movie({ title, actor }) {
+  return (
+    <li>
+      <h2>{title}</h2>
+      <p>{actor}</p>
+    </li>
+  )
 }

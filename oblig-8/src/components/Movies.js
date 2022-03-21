@@ -1,8 +1,5 @@
-import { useState, useEffect } from "react"
-import { ReactDOM } from "react"
-import Movie from "./Movie"
+// import { useState, useEffect } from 'react'
 
-export default function Movies(){
-
-  return <><p>test</p></>
+export default function Movies() {
+  return <p>Movies.js</p>
 }
