@@ -12,6 +12,7 @@ function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
+        <Route index element={<Quizes />} />
         <Route path="quiz">
           <Route index element={<Quizes />} />
           <Route path=":slug" element={<Quiz />} />

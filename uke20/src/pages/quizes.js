@@ -39,13 +39,13 @@ export default function Quizes() {
     const listQuizes = async () => {
       setLoading(true)
       const data = await getQuizzes()
-      setLoading(true)
+      setLoading(false)
       setContent(data)
     }
     listQuizes()
   }, [])
   if (loading) {
-    return <p>Laster inn</p>
+    return <p className="text-3xl font-bold text-white">Loading</p>
   }
 
   return (
