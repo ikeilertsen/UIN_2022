@@ -12,8 +12,7 @@ export default function Actors() {
   }, [])
   return (
     <div>
-      <h1>Overview</h1>
-      <h2>Actors:</h2>
+      <h1>Actors:</h1>
       <ul>
         {data.map((actors) => (
           <li key={actors._id}>{actors.full_name}</li>

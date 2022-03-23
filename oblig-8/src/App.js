@@ -1,8 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
 import Actors from './components/Actors'
+import HomePage from './components/HomePage'
 import Movie from './components/Movie'
 import Movies from './components/Movies'
 import Navigation from './components/Navigation'
+import Layout from './layout/Layout'
 
 function App() {
   // Write JavaScript, use Hooks, add state and more
@@ -12,9 +14,11 @@ function App() {
       <main className="mx-auto max-w-sm mt-6 border-2 p-6">
         <Navigation />
         <Routes>
+          <Route index element={<HomePage />} />
+          <Route element={<Layout />} />
           <Route path="/" element={<Movie />} />
-          <Route path="/" element={<Actors />} />
-          <Route path="/" element={<Movies />} />
+          <Route path="actors" element={<Actors />} />
+          <Route path="movies" element={<Movies />} />
         </Routes>
       </main>
     </div>

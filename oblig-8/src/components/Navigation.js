@@ -1,16 +1,22 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Navigation() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/movies">Movies</Link>
-        </li>
-        <li>
-          <Link to="/actors">Actors</Link>
-        </li>
-      </ul>
-    </nav>
+    <>
+      <h1>I(vo)MDb</h1>
+      <nav>
+        <ul>
+          <li>
+            <NavLink to="">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="movies">Movies</NavLink>
+          </li>
+          <li>
+            <NavLink to="actors">Actors</NavLink>
+          </li>
+        </ul>
+      </nav>
+    </>
   )
 }
