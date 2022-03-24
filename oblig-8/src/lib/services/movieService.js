@@ -8,6 +8,7 @@ const movieFields = `
 const actorFields = `
   _id,
   full_name,
+  "slug": slug.current
 `
 
 export async function getMovies() {
@@ -21,3 +22,13 @@ export async function getActor() {
   console.log(data)
   return data
 }
+
+export async function getActorInfo(slug) {
+  const data = await client.fetch(
+    `*[_type == "actors" && name.current == $slug]{...}}`,
+    { slug }
+  )
+  return data[0]
+}
+
+// gjøre spørringene større

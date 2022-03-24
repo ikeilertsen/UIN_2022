@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom'
 export default function Navigation() {
   return (
     <>
-      <h1>I(vo)MDb</h1>
+      <header id="header">I(vo)MDb</header>
       <nav>
-        <ul>
+        <ul id="navigation">
           <li>
             <NavLink to="">Home</NavLink>
           </li>

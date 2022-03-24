@@ -12,6 +12,7 @@ export default function Actors() {
   }, [])
   return (
     <div>
+      <p>home / actors</p>
       <h1>Actors:</h1>
       <ul>
         {data.map((actors) => (

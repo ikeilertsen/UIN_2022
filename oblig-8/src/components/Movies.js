@@ -12,6 +12,7 @@ export default function Movies() {
   }, [])
   return (
     <div>
+      <p>home / movies</p>
       <h1>Movies:</h1>
       <ul>
         {data.map((movie) => (
