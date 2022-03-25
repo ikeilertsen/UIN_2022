@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { getActor } from '../lib/services/movieService'
 
 export default function Actors() {
@@ -10,13 +11,16 @@ export default function Actors() {
     }
     getActorData()
   }, [])
+  console.log(data)
   return (
     <div>
       <p>home / actors</p>
-      <h1>Actors:</h1>
+      <h1>Featured Actors:</h1>
       <ul>
         {data.map((actors) => (
-          <li key={actors._id}>{actors.full_name}</li>
+          <li key={actors._id}>
+            <Link to={'/actors/' + actors?.slug}>{actors.full_name}</Link>
+          </li>
         ))}
       </ul>
     </div>

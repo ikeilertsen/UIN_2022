@@ -13,7 +13,7 @@ export default function Movies() {
   return (
     <div>
       <p>home / movies</p>
-      <h1>Movies:</h1>
+      <h1>Featured Movies:</h1>
       <ul>
         {data.map((movie) => (
           <li key={movie.title}>{movie.title}</li>

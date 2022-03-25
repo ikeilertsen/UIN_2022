@@ -20,16 +20,31 @@ h1{
   text-align: center;
 }
 
+h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+}
+
 li{
   padding: 8px;
   text-align: center;
-}   
+  list-style: none;
 
-li:hover{
-  transition: ease-in-out 0.3s;
-  color: rgb(131, 120, 86);
-  letter-spacing: 4px;
-}
+  a{
+    transition: ease-in-out 0.3s;
+    color:black;
+    padding: 8px;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+  }
+  :hover{
+    color: rgb(131, 120, 86);
+    letter-spacing: 4px;
+  }
+}   
 
 body {
   margin: 0;
@@ -47,7 +62,7 @@ code {
 
 #header{
   font-family: 'Bebas Neue', cursive;
-  color: rgb(250, 227, 151);
+  color: rgb(233, 200, 124);
   text-align: left;
   padding: 1rem;
   font-weight: bold;
@@ -80,6 +95,11 @@ code {
     color: rgb(250, 227, 151);
     letter-spacing: 5px;
     text-shadow: 1px 1px rgb(78, 78, 78);
+    transition: ease-in-out 0.3s;
+  }
+  :hover{
+    letter-spacing: 8px;
+    border-radius: 6px;
   }
 }
 

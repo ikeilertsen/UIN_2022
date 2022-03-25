@@ -16,24 +16,32 @@ export default function AboutActor() {
     fetchActor(slug)
   }, [slug])
   console.log(actorInfo)
+  // actorinfo.movies er nå en array med filmene skuespillerene har spilt i
 
   return (
     <div>
-      {slug?.map((movies, index) => (
-        <div key={index}>
+      <p>home / movies / {actorInfo.full_name}</p>
+      <h1>{actorInfo.full_name}</h1>
+      <p>Seen in : </p>
+      <ul>
+        <li>{actorInfo.movies}</li>
+      </ul>
+      {/* {actorInfo.map((movie, actor) => (
+        <div key={actor}>
           {(() => {
-            if (index === 0) {
+            if (actor === 0) {
               return (
                 <>
-                  <h2>{movies.actor}</h2>
-                  <p>Played in:</p>
+                  <h1>{actor.slug}</h1>
+                  <h2>Featured in:</h2>
                 </>
               )
             }
           })()}
-          <li>{movies.title}</li>
+          <li>{movie.title}</li>
+          <li>a movie</li>
         </div>
-      ))}
+      ))} */}
     </div>
   )
 }
