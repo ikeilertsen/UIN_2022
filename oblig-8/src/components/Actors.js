@@ -14,15 +14,17 @@ export default function Actors() {
   console.log(data)
   return (
     <div>
-      <p>home / actors</p>
-      <h1>Featured Actors:</h1>
-      <ul>
-        {data.map((actors) => (
-          <li key={actors._id}>
-            <Link to={'/actors/' + actors?.slug}>{actors.full_name}</Link>
-          </li>
-        ))}
-      </ul>
+      <article>
+        <p>home / actors</p>
+        <h1>Featured Actors:</h1>
+        <ul>
+          {data.map((actors) => (
+            <li key={actors._id}>
+              <Link to={'/actors/' + actors?.slug}>{actors.full_name}</Link>
+            </li>
+          ))}
+        </ul>
+      </article>
     </div>
   )
 }

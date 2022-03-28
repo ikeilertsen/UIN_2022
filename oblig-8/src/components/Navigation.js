@@ -4,8 +4,8 @@ export default function Navigation() {
   return (
     <>
       <header id="header">I(vo)MDb</header>
-      <nav>
-        <ul id="navigation">
+      <nav id="navigation">
+        <ul>
           <li>
             <NavLink to="">Home</NavLink>
           </li>

@@ -12,13 +12,15 @@ export default function Movies() {
   }, [])
   return (
     <div>
-      <p>home / movies</p>
-      <h1>Featured Movies:</h1>
-      <ul>
-        {data.map((movie) => (
-          <li key={movie.title}>{movie.title}</li>
-        ))}
-      </ul>
+      <article>
+        <p>home / movies</p>
+        <h1>Featured Movies:</h1>
+        <ul>
+          {data.map((movie) => (
+            <li key={movie.title}>{movie.title}</li>
+          ))}
+        </ul>
+      </article>
     </div>
   )
 }

@@ -26,22 +26,6 @@ export default function AboutActor() {
       <ul>
         <li>{actorInfo.movies}</li>
       </ul>
-      {/* {actorInfo.map((movie, actor) => (
-        <div key={actor}>
-          {(() => {
-            if (actor === 0) {
-              return (
-                <>
-                  <h1>{actor.slug}</h1>
-                  <h2>Featured in:</h2>
-                </>
-              )
-            }
-          })()}
-          <li>{movie.title}</li>
-          <li>a movie</li>
-        </div>
-      ))} */}
     </div>
   )
 }
