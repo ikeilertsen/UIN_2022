@@ -11,7 +11,7 @@ function App() {
   // Write JavaScript, use Hooks, add state and more
 
   return (
-    <div id="grid">
+    <div>
       <main className="mx-auto max-w-sm mt-6 border-2 p-6">
         <Navigation />
         <Routes>
